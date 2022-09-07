@@ -1,14 +1,15 @@
-install:
-	npm install
-
-publish:
-	npm publish --dry-run
-
 develop:
-	npx webpack-dev-server
+	npx webpack serve
+
+install:
+	npm ci
+
+lint:
+	npx eslint .
+
+fix:
+	npx eslint --fix .
 
 build:
 	rm -rf dist
-	NODE_ENV=production npx webpack	
-lint:
-	npx eslint .
+	NODE_ENV=production npx webpack
