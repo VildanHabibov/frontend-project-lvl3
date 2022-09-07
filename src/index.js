@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import runApp from './init.js';
+import init from './init';
 
-runApp();
+init();

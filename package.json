@@ -1,45 +1,58 @@
 {
-  "name": "@hexlet/code",
+  "name": "frontend-project-lvl3",
   "version": "1.0.0",
-  "description": "RSS Reader",
-  "main": "src/init.js",
-  "type": "module",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nunsez/frontend-project-lvl3.git"
+    "url": "git+https://github.com/paultit/frontend-project-lvl3.git"
   },
-  "author": "Alexander Mandrikov",
+  "author": {
+    "name": "Titarenko Pavlo",
+    "email": "titarenko.pavel@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nunsez/frontend-project-lvl3/issues"
+    "url": "https://github.com/paultit/frontend-project-lvl3/issues"
   },
-  "homepage": "https://github.com/nunsez/frontend-project-lvl3#readme",
+  "homepage": "https://github.com/paultit/frontend-project-lvl3#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.2",
-    "eslint": "^7.20.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^8.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "html-webpack-plugin": "^5.2.0",
-    "prettier": "^2.2.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.24.1",
-    "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.2",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
-    "i18next": "^19.9.0",
-    "jquery": "^3.6.0",
-    "lodash": "^4.17.21",
-    "on-change": "^2.2.3",
+    "autoprefixer": "^9.8.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "i18next": "^19.4.5",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.15",
+    "melanke-watchjs": "^1.5.2",
     "popper.js": "^1.16.1",
-    "yup": "^0.32.9"
+    "sugarss": "^2.0.0",
+    "yup": "^0.29.1"
   }
 }
