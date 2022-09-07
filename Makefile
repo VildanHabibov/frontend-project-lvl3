@@ -1,20 +1,11 @@
-install: 
-	npm install
-
-prettier:
-	npx prettier --write ./src/ ./__tests__/
+install:
+	npm ci
 
 lint:
-	npx eslint 
-
-test:
-	npm test
-
-test-coverage:
-	npm test -- --coverage --coverageProvider=v8
+	npx eslint .
 
 build:
-	npm run build
+	NODE_ENV=production npx webpack
 
-start:
-	npm run start
+develop:
+	npx webpack serve --open
